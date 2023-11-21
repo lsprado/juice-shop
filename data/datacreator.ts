@@ -136,6 +136,7 @@ async function createUsers () {
 
 async function createWallet () {
   const users = await loadStaticData('users')
+  const ghAccess = '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'
   return await Promise.all(
     users.map(async (user: User, index: number) => {
       return await WalletModel.create({
