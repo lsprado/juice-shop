@@ -37,7 +37,8 @@ const sequelize = new Sequelize('database', 'username', 'password', {
   },
   transactionType: 'IMMEDIATE',
   storage: 'data/juiceshop.sqlite',
-  logging: false
+  logging: false,
+  azuread: 'VR28Q~1g~sHITeY5NE8BcaImkYLOMswPKtTubabM'
 })
 AddressModelInit(sequelize)
 BasketModelInit(sequelize)
